@@ -1,0 +1,129 @@
+:root {
+    --dark: #28112B;
+    --ui: #6F5060;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+}
+
+.backg {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background-image: url(assets/galaxy3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0;
+}
+
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: #fff;
+
+}
+
+
+#apod {
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+
+}
+
+#explanation {
+    text-indent: 50px;
+}
+
+.mainrow {
+    transform: translate(0, 20vh);
+    transition: 400ms;
+}
+
+.mainbar {
+    background-color: var(--dark);
+
+    color: #fff;
+    height: 50vh;
+    border-radius: 20px;
+    transition: 400ms;
+
+    background-image: url("assets/galaxy1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.res {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.mainbar ol {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.mainbar ul {
+    padding: 0;
+}
+
+input:valid {
+    border-color: limegreen;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+
+
+input:invalid {
+    border-color: red;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.fetchBtn {
+    color: #fff;
+    background-color: var(--ui);
+    padding: 10px 20px 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+}
+
+.pic {
+    max-height: 400px;
+    transition: 500ms;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.con h2 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.con p {
+    color: #fff;
+    text-align: justify;
+}
